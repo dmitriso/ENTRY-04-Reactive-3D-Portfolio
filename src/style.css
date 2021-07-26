@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Space+Mono&family=Xanh+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap');
+@font-face{
+    font-family: 'Mak';
+    src: url('assets/fonts/MAK.woff');
+}
+
+::-webkit-scrollbar {
+    display: none;
+  }
+  
+
+html,
+body { 
+     margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: 'Times New Roman', times, serif;
+    scroll-behavior: smooth;
+    cursor: none;
+    cursor: url('./assets/images/archon(small)-5.svg'), auto;
+    -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Mak'; */
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 20px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: white;
+    z-index: 1;
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: white;
+    z-index: 1;
+}
+
+h3,img {
+    z-index: 1;
+}
+
+
+a, span{
+    color: white;
+    text-decoration: none;
+    cursor: none;
+    cursor: url('./assets/images/archon(small)-5.svg'), auto;
+}
+
+ul {
+    list-style: none;
+}
+
+.webgl
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    outline: none;
+}
+
+.frame {
+    height: 100vh;
+    place-items: center;
+    z-index: 2;
+}
+
+
+.label {
+    font-family: 'Space Mono', monospace;
+    width: 200px;
+    display: inline-block;
+    justify-content: space-around;
+    position: fixed;
+    z-index: 2;
+    letter-spacing: 1px;
+    font-size: 15px;
+    top: 20%;
+    left: 20%;
+    opacity: 0;
+}
+
+.logo {
+    background-color: rgba(0, 0, 0, 0.87);
+    font-family: 'Mak';
+    font-size: 40px;
+    width:100%;
+    height:40px;
+    color: rgb(223, 223, 223);
+    padding: 0 40px;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    left: -1.7%;
+    letter-spacing: 1px;
+    opacity: 0;
+    z-index: 2;
+}
+
+.navLinks {
+    color:white;
+    letter-spacing: 2px;
+    font-family: 'Space Mono', monospace;
+    font-size: 10px;
+}
+
+.nav {
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    z-index: 2;
+    top: 80%;
+    right: 10%;
+    display: grid;
+    align-items: flex-start;
+    opacity: 0;
+}
+
+.nav a:hover { 
+    color:rgba(255, 0, 0, 0.411);
+}
+
+.itemLinks {
+    flex: none;
+    position: absolute;
+    display: flex;
+}
+
+.menu {
+	width: 100vw;
+    height: 100vh;
+	position: relative;
+	overflow: auto;
+	-webkit-overflow-scrolling: touch;
+	scrollbar-width: none;
+    display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+    z-index:1;
+    color: white;
+}
+
+
+.mobile .menu {
+	padding: 5rem 0;
+	height: auto;
+}
+
+.menu__item {
+	flex: none;
+    margin: 0;
+}
+
+.menu__item-inner {
+    height: 300px;
+    margin: 0;
+	white-space: nowrap;
+	position: relative;
+	display: flex;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 1rem;
+    text-decoration: none;
+    color: #dbd7d793;
+    font-weight: 300;
+    text-transform: uppercase;
+    opacity: 1;
+    transition: all 250ms ease-in-out !important;
+    cursor: none;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.menu__item-inner:hover {
+    color:rgb(255, 255, 255);
+    font-size: 100px;
+    cursor: none;
+    cursor: url('./assets/images/archon(small)-5.svg'), auto;
+}
+
+
+@media screen and (min-width: 53em) {
+	.menu__item-inner {
+		font-size: 2rem;
+        
+	}
+}
+
+.item-card, .active {
+    margin:0;
+    padding:0;
+    position: relative;
+    width: 1000px;
+    display: flex;
+    color:white;
+    z-index: 2;
+    opacity: 1;
+    max-height: 1000px;
+    transition: all 0.7s ease-out;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.inactive {
+    margin:0;
+    padding: 0;
+    position: relative;
+    width: 1000px;
+    display: flex;
+    color:white;
+    z-index: 2;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.7s ease-in;
+    justify-content: center;
+    align-items: center;
+}
